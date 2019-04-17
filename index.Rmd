@@ -1,5 +1,5 @@
 ---
-title: "BARCELONA GROUP"
+title: "GRANADA GROUP"
 author: "Cristina Turrissi"
 date: '27th to 30th June, 2019'
 output:

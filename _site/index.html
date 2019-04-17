@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Cristina Turrissi" />
+
+
+<title>BARCELONA GROUP</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<link href="site_libs/vis-4.16.1/vis.min.css" rel="stylesheet" />
+<script src="site_libs/vis-4.16.1/vis.min.js"></script>
+<link href="site_libs/timeline-0.4/timevis.css" rel="stylesheet" />
+<script src="site_libs/timevis-binding-0.4/timevis.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-binding-2.0.2/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-1.1.17/leaflet-providers.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.0.2/leaflet-providers-plugin.js"></script>
+<link href="site_libs/leaflet-easybutton-1.3.1/easy-button.css" rel="stylesheet" />
+<script src="site_libs/leaflet-easybutton-1.3.1/easy-button.js"></script>
+<script src="site_libs/leaflet-easybutton-1.3.1/EasyButton-binding.js"></script>
+<link href="site_libs/ionicons-2.0.1/ionicons.min.css" rel="stylesheet" />
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.5/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.16/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/dt-ext-buttons-1.10.16/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-buttons-1.10.16/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.16/js/buttons.flash.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.16/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.16/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.16/js/buttons.print.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="FORMATO.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CE Events</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Quotation</a>
+</li>
+<li>
+  <a href="about.html">Credentials</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">BARCELONA GROUP</h1>
+<h4 class="author"><em>Cristina Turrissi</em></h4>
+<h4 class="date"><em>27th to 30th June, 2019</em></h4>
+
+</div>
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="LOGO.png" width="150" align="right"></A>') 
+    }); 
+</script>
+<div id="accommodation" class="section level2">
+<h2>Accommodation</h2>
+<div id="main-hotel-hilton-diagonal-mar" class="section level3">
+<h3><strong>Main Hotel: Hilton Diagonal Mar</strong></h3>
+<p>This hotel is next to Diagonal Mar Shopping Centre and just 400 m from Nova Mar Bella Beach. It offers a seasonal outdoor pool, a fitness centre and air-conditioned rooms with a LED TV.</p>
+<p><strong>Hilton Diagonal Mar Barcelona’s</strong> terrace, Purobeach Barcelona, has an outdoor pool and paddling pool available from May to October. All services on the Purobeach terrace, including Balinese beds, sunbeds and massages are available for an extra charge.</p>
+<p>The Hilton’s Indigo Restaurant serves international and Catalan food. Purobeach Restaurant offers a diverse menu, as well as a variety of classic cocktails and international spirits. Pistaccio Lounge Bar serves cocktails.</p>
+<p><img src = "https://t-ec.bstatic.com/images/hotel/max1024x768/764/76414425.jpg" width="820"></p>
+<p><img src = "https://s-ec.bstatic.com/images/hotel/max1024x768/173/173608200.jpg" width="340"> <img src = "https://t-ec.bstatic.com/images/hotel/max1024x768/173/173605657.jpg" width="390" align="right"></p>
+<p><img src = "https://t-ec.bstatic.com/images/hotel/max1024x768/891/89187439.jpg" width="820"></p>
+</div>
+<div id="alternative-hotels" class="section level3 tabset tabset-fade tabset-pills">
+<h3><strong>Alternative Hotels</strong></h3>
+<div id="hotel-arts" class="section level4">
+<h4>Hotel Arts</h4>
+<p>Overlooking Barceloneta Beach and Barcelona city centre, this design hotel has 2 outdoor pools and luxury spa with panoramic city views.</p>
+<p>The <strong>Arts</strong> is situated next to Barcelona’s Olympic Port and surrounded by shops and lively bars. Barceloneta Beach is 250 m away, while Ciutadella Park is 300 m away.</p>
+<p>The <strong>Arts Hotel’s</strong> stylish, spacious rooms include a flat-screen TV and sound system. The bathrooms have a separate bathtub and hydromassage shower.</p>
+<p>The hotel’s Enoteca restaurant, awarded 2 Michelin stars, serves fine Mediterranean cuisine, while the creative Arola is run by famous chef Sergi Arola. The property includes a number of other bars and restaurants, including a pool-side bar serving light meals in the summer.</p>
+<p><strong>Hotel Arts</strong> has a hair salon and various luxury fashion boutiques. The hotel also offers a multilingual concierge team and a fully equipped business centre.</p>
+<style>
+p.comment {
+background-color: #ffcc99;
+padding: 10px;
+border: 1px solid black;
+border-radius: 5px;
+}
+</style>
+<p class="comment">
+Rates per room and night: Double room for single use, breakfast included: 475€ VAT inc Touristic tax: 2,48€ VAT inc per person and night
+</p>
+<p class="comment">
+This offer is valid for 160 rooms from 28th June to 1st July (the hotel is not available the 27th June)
+</p>
+<p class="comment">
+This room block is subject to a minimum of 2 f&amp;b event for the 160 pax for a minimum expense of 136,50€ VAT and service inc per person per event.
+</p>
+<p class="comment">
+Meeting Room rental HD: 2300€ VAT inc - audiovisual equipment not included
+</p>
+<p><img src = "https://s-ec.bstatic.com/images/hotel/max1024x768/164/164158962.jpg" width="820"></p>
+<p><img src = "https://s-ec.bstatic.com/images/hotel/max1024x768/140/140046148.jpg" width="360"> <img src = "https://s-ec.bstatic.com/images/hotel/max1024x768/140/140046068.jpg" width="360" align="right"></p>
+<p><img src = "https://s-ec.bstatic.com/images/hotel/max1024x768/213/21335763.jpg" width="820"></p>
+</div>
+</div>
+</div>
+<div id="programme" class="section level2">
+<h2>Programme</h2>
+<div id="programme-overview-and-timeline" class="section level3">
+<h3><strong>Programme Overview and timeline</strong></h3>
+<div id="htmlwidget-b34eb7d2bb1679aea06d" class="timevis html-widget" style="width:100%;height:500px;">
+<div class="btn-group zoom-menu">
+<button type="button" class="btn btn-default btn-lg zoom-in" title="Zoom in">+</button>
+<button type="button" class="btn btn-default btn-lg zoom-out" title="Zoom out">-</button>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-b34eb7d2bb1679aea06d">{"x":{"items":[{"id":" 1","start":"2019-06-27 17:00:00","content":"Transfer in","group":"3","type":"box","style":"background-color:#FF9933;"},{"id":" 2","start":"2019-06-27 20:30:00","content":"Dinner Restaurant Xalet de Montjuic","group":"4","type":"box","style":"background-color:#FF9933;"},{"id":" 3","start":"2019-06-28 08:30:00","content":"Meeting","group":"4","type":"box","style":"background-color:#FF9933;"},{"id":" 4","start":"2019-06-28 11:30:00","content":"Catamaran Sailing Activity","group":"1","type":"box","style":"background-color:#FF9933;"},{"id":" 5","start":"2019-06-28 13:00:00","content":"Lunch on board the catamaran","group":"2","type":"box","style":"background-color:#FF9933;"},{"id":" 6","start":"2019-06-28 16:00:00","content":"Free Time","group":"3","type":"box","style":"background-color:#FF9933;"},{"id":" 7","start":"2019-06-28 20:00:00","content":"Dinner at El Principal","group":"4","type":"box","style":"background-color:#FF9933;"},{"id":" 8","start":"2019-06-29 09:00:00","content":"Free time","group":"1","type":"box","style":"background-color:#FF9933;"},{"id":" 9","start":"2019-06-29 09:00:00","content":"Alternative: Camp Nou Visit","group":"1","type":"box","style":"background-color:#FF9933;"},{"id":"10","start":"2019-06-29 09:00:00","content":"Alternative: Sagrada Familia Visit","group":"1","type":"box","style":"background-color:#FF9933;"},{"id":"11","start":"2019-06-29 13:00:00","content":"Lunch at Can Travi Nou","group":"2","type":"box","style":"background-color:#FF9933;"},{"id":"12","start":"2019-06-29 19:00:00","content":"Codorniu - welcome drink and private train visit","group":"4","type":"box","style":"background-color:#FF9933;"},{"id":"13","start":"2019-06-29 20:00:00","content":"Codorniu - Gala Dinner","group":"4","type":"box","style":"background-color:#FF9933;"},{"id":"14","start":"2019-06-30 10:00:00","content":"Tapas Tour","group":"1","type":"box","style":"background-color:#FF9933;"},{"id":"15","start":"2019-06-30 14:00:00","content":"Transfer out","group":"2","type":"box","style":"background-color:#FF9933;"}],"groups":[{"id":"1","content":"Morning"},{"id":"2","content":"Lunch"},{"id":"3","content":"Afternoon"},{"id":"4","content":"Diner"}],"showZoom":true,"zoomFactor":0.2,"fit":true,"options":[],"height":500,"api":[{"method":"setOptions","options":{"orientation":"top","align":"left"}}]},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="map" class="section level3">
+<h3><strong>Map</strong></h3>
+<div id="htmlwidget-35d255f93d4f4919380d" style="width:768px;height:768px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-35d255f93d4f4919380d">{"x":{"options":{"minZoom":11,"maxZoom":50,"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"dragging":true},"calls":[{"method":"addProviderTiles","args":["Esri",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[41.4084365,41.3868915,41.3693765,41.3893106,41.4311008,41.4347],[2.2177557,2.1962221,2.1641142,2.154299,2.1520599,1.793],5,null,null,{"interactive":true,"className":"","stroke":true,"color":["#FF0000","#FF0000","#0000FF","#0000FF","#0000FF","#0000FF"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#FF0000","#FF0000","#0000FF","#0000FF","#0000FF","#0000FF"],"fillOpacity":0.2},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPopups","args":[[41.4084365,41.3868915,41.3693765,41.3893106,41.4311008,41.4347],[2.2177557,2.1962221,2.1641142,2.154299,2.1520599,1.793],["<b>Hilton Diagonal MAr<\/b>","<b>Hotel Arts<\/b>","<b>Xalet de Montjuic<\/b>","<b>El Principal<\/b>","<b>Can Travi Nou<\/b>","<b>Codorniu<\/b>"],null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},{"method":"addLegend","args":[{"colors":["#FF0000","#0000FF"],"labels":["Accom","Rest"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"bottomright","type":"factor","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]}],"limits":{"lat":[41.3693765,41.4347],"lng":[1.793,2.2177557]}},"evals":["calls.4.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (function(el, x){ var map = this; map._initialCenter = map.getCenter(); map._initialZoom = map.getZoom();}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+</div>
+<div id="day-1---thursday-27th-june" class="section level3">
+<h3><strong>DAY 1 - Thursday 27th June</strong></h3>
+<p>Guest will arrive in Barcelona’s Airport and 2 or 3 persons from Cutting Edge Staff will welcome them and walk them to the buses that will transfer them to the hotel. After a short free time to refresh they will go by bus to the restaurant for dinner</p>
+<div id="el-xalet-de-montjuic" class="section level5">
+<h5><strong>El Xalet de Montjuic</strong></h5>
+<p>Located in an idyllic setting on the top of the Montjuïc hill, <strong>El Xalet</strong> is a spectacular restaurant that offers the best views over Barcelona from its dining rooms and wonderful panoramic terraces. Exquisite and modern in its design, the restaurant presents, in a select and refined atmosphere, signature Mediterranean and Catalan cuisine.</p>
+<p>Perfect to welcome our guests the first evening, they will be seated in a private dinning room.</p>
+<p><img src = "https://www.metropoliabierta.com/uploads/s1/29/04/98/una-de-las-terrazas-de-el-xalet.jpeg" width="390"> <img src = "https://www.gruptravi.com/wp-content/uploads/EasyRotatorStorage/user-content/erc_31_1396539645/content/assets/Montjuic-El-Xalet-72C0F-0.jpg" width="310" align="right"></p>
+<p><img src = "https://www.gruptravi.com/wp-content/uploads/EasyRotatorStorage/user-content/erc_31_1396539645/content/assets/Xalet-Sunset-0.jpg" width="820"></p>
+</div>
+</div>
+<div id="day-2---friday-28th" class="section level3">
+<h3><strong>DAY 2 - Friday 28th</strong></h3>
+<div id="meetings-at-the-hotel" class="section level4">
+<h4><strong>Meetings at the hotel</strong></h4>
+<p>2 hours meeting for 30 persons, the hotel has modern meeting rooms with daylight</p>
+<p><img src = "https://h.otcdn.com/imglib/hotelfotos/8/167/hotel-hilton-diagonal-mar-barcelona-044.jpg" width="820"></p>
+</div>
+<div id="catamaran-activity" class="section level4">
+<h4><strong>Catamaran Activity</strong></h4>
+<p>Guests will be transfered to the Olimpic Port where they will go onboard 2 catamarans up to 100 pax each.</p>
+<p>Both catamarans will sail together and they will stop one next to the other to offer guests the option to swin and enjoy of the sea. We propose to do a 4 hours activity having lunch on board - the catering will be the same in both catamarans and it will be served at the same time.</p>
+<p>Optionally we can offer to contract a saxo player, hinflatable toys and other extra activities as jet skis (not for everyone but just to offer guests the option to try)</p>
+<p><img src = "Orsom-sailing-email1-hi.jpg" width="820"></p>
+<p><img src = "S17.JPG" width="380"> <img src = "OrsomJazz20154.jpg" width="345" align="right"></p>
+<p><img src = "S21.jpg" width="820"></p>
+</div>
+<div id="dinner-at-el-principal-de-leixample" class="section level4">
+<h4><strong>Dinner at El Principal de l’Eixample</strong></h4>
+<p>After some free time at the hotel to refresh, our guests will be transferred to the Eixample Quarter where located 50 meters from the famous La Pedrera and Paseo de Gracia, we can find <strong>El Principal</strong> that is a versatile space.</p>
+<p>It is a stately main floor flooded with natural light thanks to its large windows. It has a magnificent interior courtyard.</p>
+<p>It is the perfect place for our second evening, it is an elegant and very cozy space that will be in exclusive for our guests.</p>
+<p><strong>El Principal</strong> bases its cuisine in the traditional Catalan cuisine and seasonal products, and offer proposals developed especially for groups and special occasions. Also it has an extensive wine list.</p>
+<p><img src = "http://elprincipaleixample.com/wp-content/uploads/2014/11/Restaurante_El_Principal_Eixample_Barcelona_Cocina_Catalana_Restaurant_Tapas_Bar_Cocktails_Vermouth_Terrace_Kitchen_Chef_Mediterranian_Food_Joan_Ferre_81.jpg" width="360"> <img src = "http://enbarcelona.com/public/images_web/enbarcelona/4f25045bb963b9f7e385df8f605d0672.jpg" width="360" align="right"></p>
+<p><img src = "https://cdn.atrapalo.com/common/photo/res/449/0/ticr_890_370.jpg" width="820"></p>
+</div>
+</div>
+<div id="day-3---saturday-29th" class="section level3">
+<h3><strong>DAY 3 - Saturday 29th</strong></h3>
+<p>Just in front the hotel guests will find a big mall called <strong>Diagonal Mar</strong> so, that ones that love to buy will find a lot of options. The beach is also less than 10 minutes walking from the hotel, so, we propose to let guests a free morning to relax and enjoy the hotel and its suroundings.</p>
+<p>As an option we propose 2 activities depending on guests preferences.</p>
+<div id="morning-optional-activities" class="section level4 tabset tabset-fade">
+<h4>Morning Optional Activities</h4>
+<div id="camp-nou-and-barca-museu" class="section level5">
+<h5>Camp Nou and Barça Museu</h5>
+<p>Activity for a minimum of 20 pax, they will be transfered to the Camp Nou and they will visit the Stadium and the Museum guided by a interactive audio-guide. They will visit the pitch, the trophies room, the interactive AV room, etc. This visit includes a new virtual reality area, in which users can put themselves inside a training session or game at the stadium tahnks to 360 technology. The projection will last for four minutes ans is a unique, innovative experience for Barça Fans.</p>
+<p><img src = "https://www.barcelonatourstickets.com/wp-content/uploads/2018/01/IMG_2224.jpg" width="820"></p>
+<p><img src = "https://static.barcelona.com/var/plain/storage/images/barcelona_tickets/fc_barcelona_football_tickets/tips_tricks/les_nouveautes_au_camp_nou_pour_2018/camp_nou_03_2018/9948894-1-eng-GB/camp_nou_03_2018_imagelarge.jpg" width="820"></p>
+<p><img src = "https://www.marca.com/imagenes/2012/08/19/en/football/barcelona/1345400102_extras_mosaico_noticia_1_g_0.jpg" width="820"></p>
+</div>
+<div id="sagrada-familia-guided-visit" class="section level5">
+<h5>Sagrada Familia guided visit</h5>
+<p>Activity for a minimum of 25 pax, our official guide will pick up guests at the hotel and they will be transfered to Sagrada Familia by a private bus. The guide will explain about the history of the city and the Modernist style in their way to the temple. Once they will arrive the will see the outside and the guide will explain them the meaning of the façades. Then they will go inside and the will enjoy this magnificient temple.</p>
+<p><img src = "http://2.bp.blogspot.com/-dg6sz0EM8Ww/U81FmzMmsgI/AAAAAAAABsU/Zh0PDv0GCTk/s1600/la-sagrada-familia-4.jpg" width="820"></p>
+<p><img src = "http://imprimalia3d.com/sites/default/files/news/Sagrada-Familia-Gaudi-3.jpg" width="820"></p>
+<p><img src = "https://img2.codigonuevo.com/d8/8c/11/20160715124716_2-930x600.jpg" width="820"></p>
+</div>
+</div>
+<div id="lunch-restaurant-can-travi-nou" class="section level4">
+<h4><strong>Lunch Restaurant: Can Travi Nou</strong></h4>
+<p>After enjoying the morining as they will prefer, guests will go by bus to the restaurant for lunch. <strong>Can Travi Nou</strong> is a restaurant placed in a Catalan manor house that dates back to the 17th century, the dining rooms and gardens of which make of the place an idyllic setting.</p>
+<p>The restaurant’s success is definitely due to its charm. Decorated with exquisite taste, the different dining rooms present a warm, inviting atmosphere, and the wonderful garden invites us, in the summertime, to enjoy a lunch under the sun or a dinner under the moonlight in an impeccable terrace.</p>
+<p>The menu offers good traditional Catalan and Mediterranean cuisine.</p>
+<p>Our guests will be seated at the covered garden, perfect for them as it is a fresh outdoor space but covered in case of rain and private.</p>
+<p><img src = "https://www.gruptravi.com/wp-content/uploads/EasyRotatorStorage/user-content/erc_82_1396536100/content/assets/CANTRAVINOU-06-2-0.jpg" width="820"></p>
+<p><img src = "https://media-cdn.tripadvisor.com/media/photo-s/11/c7/97/36/fachada.jpg" width="820"></p>
+<p>After lunch guests will enjoy some time at the hotel to refresh and rest.</p>
+</div>
+<div id="gala-dinner-at-cordorniu-winery" class="section level4">
+<h4><strong>Gala Dinner at Cordorniu Winery</strong></h4>
+<p>After 45 minutes of transfer by bus, guests will arrive to Codorniu Winery. Codorníu is synonymous to the history of a family of winegrowers which goes back to the XVI century. It is the oldest family business in Spain and one of the oldest in the world. It now has 450 years of history behind it.</p>
+<p><img src = "https://img.interempresas.net/fotos/1473822.jpeg" width="820"></p>
+<p>The Gran Celler and Museum is a modernist building designid but the architect Josep Puig i Cadafalch between 1902 and 1915. In the magnificient building is where we propose our Gala Dinner.</p>
+<p>When guests will arrive they will walk trough the Codorniu family propierty to arrive to the Museum, and outside they will enjoy the welcome cocktail.</p>
+<p><img src = "https://www.cateringsensacions.com/wp-content/uploads/2017/12/CAVAS-CODORNIU-360-personas-2-1.jpg" width="820"></p>
+<p>This cocktail will be around 1 hour, during this time we suggest to give guests the option to do a private visit to the winery on an electric train. This visit has a duration of 25 minutes and each train is up to 30 pax, so we suggest to have 2 trains working like shuttle during the whole cocktail. The train has a voice over that will explain guests theb history of the place and a little bit of the process how to elaborate cava.</p>
+<p><img src = "https://www.cateringsensacions.com/wp-content/uploads/2017/12/CAVAS-CODORNIU-360-personas-3-1.jpg" width="820"></p>
+<p>During the cocktail while they are ouside the museum we suggest to have some entertainment, we think that the most suitable is to have a DUO of Spanish Guitarists</p>
+<p>In case of rain , guests will enjoy the welcome cocktail at the museum (just the upper floor of the main dinning room)</p>
+<p><img src = "http://www.eventoscodorniu.com/particulares/wp-content/uploads/sites/4/2014/09/Museu-Indoor_Codorn%C3%ADu_bodas_banquetes_eventos_unicos_1-950x540.jpg" width="820"></p>
+<p>After the train visits and the cocktail guests will go down to the main dining room by the central stairs. They will enjoy a high quality gala menu elaborated onsite with fresh seasonal ingredients.</p>
+<p><img src = "https://www.cateringsensacions.com/wp-content/uploads/2017/12/CAVAS-CODORNIU-600-personas-1.jpg" width="820"></p>
+<p><img src = "http://www.eventoscodorniu.com/particulares/wp-content/uploads/sites/4/2014/09/Celler_Gran_Codorn%C3%ADu_bodas_banquetes_eventos_unicos_29-950x540.jpg" width="360"> <img src = "https://royalcateringbarcelona.com/wp-content/uploads/2017/05/flamenco-show-1.jpg" width="360" align="right"></p>
+<p>After dinner we suggest to enjoy one of the funniest entertaiment where everyone is welcome to sign and dance: Rumba catalana. There will be 3 guitarists and 3 dancers that will play, sing and dance while they move around the room inviting everyone to join the party.</p>
+</div>
+</div>
+<div id="day-4---sunday-30th-june" class="section level3">
+<h3><strong>DAY 4 - Sunday 30th June</strong></h3>
+<p>For the last they before the departure, if they have time enough, we recommend to do a Tapas tour. We will split guests in groups of maximum 30 pax and they will have 1 guide per group. They will be transfered to Plaza catalunya with the same buses that they will have to go to the airport.</p>
+<p>Once in plaza Catalunya, every group will start a different route to see the Gothic and the Born quarters. Every group will do 2 tapas stops, in each stop they will eat 4 tapas and 1 drink, so a total of 8 tapas and 2 drinks.</p>
+<p><img src = "https://www.planetware.com/photos-large/E/spain-barcelona-gothic-quarter-iglesia-de-santa-maria-del-pi.jpg" width="820"></p>
+<p><img src = "https://www.bcn-rentals.com/img/gothic-quarter-b.jpg" width="820"></p>
+<p>After the guided city tour they will go find the buses near Colon, and from there they will go to the Airport</p>
+<p>END OF THE PROGRAMME</p>
+<hr />
+</div>
+</div>
+<div id="budget" class="section level2">
+<h2>Budget</h2>
+<div id="htmlwidget-2a7f35630b2c2350d156" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2a7f35630b2c2350d156">{"x":{"filter":"none","extensions":["Buttons"],"data":[[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],["transf","transf","rest","rest","Accom","Accom","Act","Act","transf","act",null,null,null,"transf","rest","rest","rest","Accom","Accom","act","transf","act","transf","act","transf","Rest","Rest","transf","Rest","Rest","Rest","Rest","Rest","Rest","Rest","Rest","Rest","Accom","Accom","act","transf","TOTAL"],["Transfer","Transfer","Xalet de Montjuic","Xalet de Montjuic","Hilton Diagonal Mar","Hilton Diagonal Mar","Hilton Diagonal Mar","Hilton Diagonal Mar","Transfer","Catamaran",null,null,null,"Transfer","El Principal","El Principal","El Principal","Hilton Diagonal Mar","Hilton Diagonal Mar",null,"Transfer","Optional","Transfer","Optional","Transfer","Can Travi Nou","Can Travi Nou","Transfer","Codorniu","Codorniu","Codorniu","Codorniu","Codorniu","Codorniu","Codorniu","Codorniu","Codorniu","Hilton Diagonal Mar","Hilton Diagonal Mar",null,"Transfer",null],[4,4,160,160,160,160,1,30,4,2,160,160,160,4,160,160,160,160,160,null,null,null,null,null,4,160,160,4,1,4,1,160,160,1,1,1,1,160,160,160,4,null],["50 seaters bus transfer from the Airport to the hotel","50 seaters bus at disposal for dinner  (4h)","Welcome drink from","3 courses menu including drinks (1 bottle of wine each 3 pax, water and coffee), from","Double room for single use, breakfast inc","Touristic tax","Meeting room rental","Coffee break","50 seaters bus at disposal for the activity  (5h)","Catamaran up to 100 pax rental for 4h, including soft-drinks, water, fuel, crew and mooring taxes at Barcelona Port Olimpic, from","welcome glass of cava on board, from","Lunch menu - buffet style on board, from","Open bar of wine, beer , sangria and cava, from (rates per 2h)","50 seaters bus at disposal for dinner  (4h)","Exclusivity free of cost if the group is more than 150 pax","Welcome drink from","3 courses menu including drinks (1 bottle of wine each 3 pax, water and coffee), from","Double room for single use, breakfast inc","Touristic tax","Free morning","50 seaters bus at disposal for the activity  (4h)- rates per bus","VR Camp Nou Tour entrance tickets (rates per person) including Visit to the Barça Museum, Camp Nou tour, Barça virtual Experience with VR glasses, multimedia audio-guide available in 12 languages.","50 seaters bus at disposal for the activity  (4h)- rates per bus","Guided visit to Sagrada Familia, including 1 Official guide each 30 pax and entrance tickets for the monument , rates per person from","50 seaters bus at disposal for lunch (4h)- rates per bus","Welcome drink from","3 courses menu including drinks (1 bottle of wine each 3 pax, water and coffee), from","50 seaters bus at disposal for activity and dinner (6h)- rates per bus","Celler Gran and Museum rental for the gala dinner","Cavas subterraneas visit - visit to the winery by train, each train is up to 30 pax - rates per train during 1 hour","cloakroom service including 2 staff people","Catering- Gala menu including standup welcome cocktail + 3 courses menu + open bar of wine during dinner","2 h open bar after dinner , from","Special lighting of the Dining room","Basic Sound System including technicians","After Dinner Entertainment - Rumba Catalana, from","Welcome drink Entertainment - Spanish guitarists duo, including basic sound system for the outdoors welcome cocktail, technician, from","Double room for single use, breakfast inc","Touristic tax","Tapas Tour - 1 guide each 25/30 pax, they will do a walking tour including 2 stops to eat tapas ( a total of 8 tapas and 2 drinks), rates per person from","50 seaters bus at disposal for the activity and transfer to the Airport",null],[207.5,427.5,8.5,68.75,227,1.21,810,13.5,401.25,4325,13.75,39.375,37.5,427.5,0,8.75,62.5,227,1.21,null,375,36.5,375,30,375,8.625,48.75,646.25,5937.5,750,750,125,31.25,2300,2315,2250,2175,227,1.21,75,531.25,null],[830,1710,1360,11000,36320,193.6,810,405,1605,8650,2200,6300,6000,1710,0,1400,10000,36320,193.6,null,0,0,0,0,1500,1380,7800,2585,5937.5,3000,750,20000,5000,2300,2315,2250,2175,36320,193.6,12000,2125,234638.3]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>DATE<\/th>\n      <th>CAT<\/th>\n      <th>Owner<\/th>\n      <th>Quantity<\/th>\n      <th>Concept<\/th>\n      <th>withVAT<\/th>\n      <th>Total<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"initComplete":"\n    function(settings, json) {\n      $(this.api().table().header()).css({\n        'background-color': '#ee7600 ',\n        'color': '#fff'\n      });\n    }","dom":"Bfrtip","buttons":["copy","print"],"pageLength":42,"autoWidth":true,"columnDefs":[{"className":"dt-right","targets":[3,5,6]}],"order":[],"orderClasses":false,"lengthMenu":[10,25,42,50,100],"rowCallback":"function(row, data) {\nDTWidget.formatDate(this, row, data, 0, 'toDateString');\nDTWidget.formatCurrency(this, row, data, 5, '€', 2, 3, ',', '.', true);\nDTWidget.formatCurrency(this, row, data, 6, '€', 2, 3, ',', '.', true);\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<hr />
+</div>
+<div id="terms-conditions" class="section level2">
+<h2>Terms &amp; Conditions</h2>
+<p>*Rates valid for 2019.</p>
+<p>*Net rates for Soluzioni Omnia Media SRL</p>
+<p>*Valid for a group of minimum 160 pax from 27th to 30th June, 2019</p>
+<p>*Cutting Edge Events management fee including in the detailed rates</p>
+<p>*This budget has been quoted without VAT according to the new VAT law, in case there would be ANY CHANGE we will need to recheck and requote it.</p>
+<p>*No reservation has been done. Availability upon request.</p>
+<hr />
+</div>
+<div id="company-profile" class="section level2">
+<h2>Company Profile</h2>
+<p><img src = "CURRICULUM%20GRAFICO.001.jpeg" width="800"></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
